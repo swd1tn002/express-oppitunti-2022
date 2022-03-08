@@ -15,3 +15,14 @@
  * riippuvuudet, eli Jest-testaustyökalun. Toinen komento suorittaa
  * tätä skriptiä varten kirjoitetut testit.
  */
+
+const users = require('./users.json');
+const posts = require('./posts.json');
+
+users.forEach(user => {
+    console.log(user.name);
+
+    posts
+        .filter(post => post.userId === user.id)
+        .forEach(post => console.log(` - ${post.title}`));
+});
