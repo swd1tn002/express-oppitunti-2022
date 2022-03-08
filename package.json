@@ -1,0 +1,28 @@
+{
+  "name": "users-and-posts-webapp",
+  "version": "1.0.0",
+  "description": "Tämän viikon tehtävässä harjoitellaan funktionaalista ohjelmointia ja JavaScriptin taulukkofunktioiden käyttöä Node.js-ympäristössä. Tehtävänä on lukea kahdesta erillisestä JSON-tiedostosta käyttäjiä ja postauksia, ja yhdistellä käyttäjät niitä vastaaviin postauksiin kahdella eri tavalla.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harjoitukset/functional-javascript-swd1tn002.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harjoitukset/functional-javascript-swd1tn002/issues"
+  },
+  "homepage": "https://github.com/harjoitukset/functional-javascript-swd1tn002#readme",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "node-fetch": "^2.6.7"
+  }
+}
