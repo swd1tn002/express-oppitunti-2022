@@ -16,7 +16,7 @@ app.get('/users', async (req, res) => {
     let users = await getUsers();
 
     if (id) {
-        res.json(users.find(user => user.id === id) ?? null);
+        res.json(users.find(user => user.id === id) || null);
     } else {
         res.json(users);
     }
