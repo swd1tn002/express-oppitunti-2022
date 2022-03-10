@@ -4,7 +4,7 @@ const app = express();
 const { getUsers, getPosts } = require('./blog/api');
 const { filterPostsByUser } = require('./blog/functions');
 
-const PORT = process.env.PORT ?? 3000;
+const PORT = process.env.PORT || 3000;
 
 app.get('/', function (req, res) {
     res.send('Hello World');
